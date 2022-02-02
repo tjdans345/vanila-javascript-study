@@ -23,6 +23,7 @@ let init = {
     let result = -test;
 
     document.write("과연 ? : " + result + "<br>");
+    // 과연 ? : -1
   },
 
   four: function () {
