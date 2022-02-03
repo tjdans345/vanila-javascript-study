@@ -15,7 +15,7 @@ let init = {
 };
 
 init.one();
-
+i;
 // true
 // false
 // true
