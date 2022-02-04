@@ -10,6 +10,7 @@ let init = {
     document.write(o2 + "<br>");
     document.write(o3 + "<br>");
     document.write("테스트 " + o3_1 + "<br>");
+    document.write(`테스트 ${o3_1} 입니다.`);
     document.write(o4);
   },
 };
