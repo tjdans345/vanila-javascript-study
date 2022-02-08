@@ -45,6 +45,7 @@ function multiple(n1, n2) {
  * @returns n1 / n2
  */
 function devide(n1, n2) {
+  console.log(n1 / n2);
   return n1 / n2;
 }
 
