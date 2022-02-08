@@ -13,6 +13,7 @@ let sum2 = sum(30, 20);
  * @returns n1 + n2
  */
 function add(n1, n2) {
+  console.log(n1 + n2);
   return n1 + n2;
 }
 
