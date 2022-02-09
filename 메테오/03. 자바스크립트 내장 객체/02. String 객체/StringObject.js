@@ -64,3 +64,35 @@ console.log(바꿔바꿔모든걸다바꿔);
 
 // 정규식을 이용하여 모든 공백 제거
 console.log(바꿔바꿔모든걸다바꿔.replace(/" "/g, ""));
+
+// toUpperCase(), toLowerCase()
+let tt1 = "Hello World";
+console.log(tt1.toUpperCase()); // HELLO WORLD
+console.log(tt1.toLowerCase()); // hello world
+
+// concat()
+let t1 = "Hello";
+let t2 = "World";
+let t3 = t1.concat(" ", t2);
+console.log(t3);
+let t4 = "Hello" + " " + "World";
+console.log(t4);
+let t5 = "Hello".concat(" ", "World");
+console.log(t5);
+let t6 = t1.concat(" Meteor", " World");
+console.log(t6);
+
+// trim()
+let a1 = "               hello world!              ";
+console.log(a1.trim());
+
+// padStart(), padEnd()
+let a2 = "5";
+console.log(a2.padStart(4, 0));
+
+let a3 = "5";
+console.log(a3.padEnd(4, 0));
+
+// charAt()
+let s1 = "Hello World";
+console.log(s1.charAt(2));
