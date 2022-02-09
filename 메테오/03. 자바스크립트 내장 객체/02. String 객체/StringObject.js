@@ -100,3 +100,7 @@ console.log(s1.charAt(2));
 // charCodeAt()
 let s2 = "Hello World";
 console.log(s2.charCodeAt(0));
+
+// split()
+let birthDay = "1994-03-26";
+console.log(birthDay.split("-"));
