@@ -25,3 +25,13 @@ let fristPosition = text.indexOf("메");
 let secondPosition = text.indexOf("오");
 
 console.log(text.slice(fristPosition, secondPosition + 1));
+
+// 첫 번째 파라미터인 시작 위치 인덱스를 음수로 주면, 문자열의 끝에서부터 거꾸로 읽는다!
+let text2 = "딸기바나나";
+let fristPosition2 = text2.indexOf("나");
+let secondPosition2 = text2.indexOf("바");
+
+console.log(-fristPosition2);
+console.log(-secondPosition2);
+
+console.log(text2.slice(-fristPosition2, -secondPosition2));
