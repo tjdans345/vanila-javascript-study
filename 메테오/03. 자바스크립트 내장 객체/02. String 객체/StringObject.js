@@ -104,3 +104,18 @@ console.log(s2.charCodeAt(0));
 // split()
 let birthDay = "1994-03-26";
 console.log(birthDay.split("-"));
+
+// startWith(), endsWith()
+let url = "http://website.com";
+if (url.startsWith("http://") || url.startsWith("https://")) {
+  console.log("오케잉");
+} else {
+  console.log("노놉");
+}
+
+let file = "abc.pdf";
+if (file.endsWith(".pdf")) {
+  console.log("파일");
+} else {
+  console.log("파일 아님");
+}
