@@ -96,3 +96,7 @@ console.log(a3.padEnd(4, 0));
 // charAt()
 let s1 = "Hello World";
 console.log(s1.charAt(2));
+
+// charCodeAt()
+let s2 = "Hello World";
+console.log(s2.charCodeAt(0));
