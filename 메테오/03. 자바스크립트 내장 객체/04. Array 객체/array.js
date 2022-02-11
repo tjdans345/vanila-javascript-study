@@ -89,5 +89,54 @@ console.log(arr1.concat(arr2, arr3));
 
 console.log("--------------slice()--------------");
 let animals2 = ["개", "고양이", "소", "말", "돼지"];
-console.log(animals2.slice(3));
-console.log(animals2.slice(1, 3));
+console.log(animals2.slice(3)); //  ['말', '돼지']
+console.log(animals2.slice(1, 3)); // ['고양이', '소']
+
+console.log("--------------sort()--------------");
+
+let points = [400, 100, 1, 5, 25, 10];
+points.sort((a, b) => a - b);
+console.log(points);
+points.sort((a, b) => b - a);
+console.log(points);
+
+let animals3 = ["개", "고양이", "소", "말", "돼지"];
+console.log(animals3.sort());
+console.log(animals3.reverse());
+
+console.log("--------------sort() 예제--------------");
+let persons = [
+  {
+    name: "안젤라",
+    point: 87,
+    city: "센텀",
+  },
+  {
+    name: "션",
+    point: 76,
+    city: "센텀",
+  },
+  {
+    name: "아가트",
+    point: 86,
+    city: "센텀",
+  },
+  {
+    name: "웰람슨",
+    point: 85,
+    city: "센텀",
+  },
+  {
+    name: "니키",
+    point: 80,
+    city: "센텀",
+  },
+  {
+    name: "윌리",
+    point: 75,
+    city: "센텀",
+  },
+];
+
+persons.sort((a, b) => (a.point > b.point ? -1 : a.point < b.point ? 1 : 0));
+console.log(persons);
