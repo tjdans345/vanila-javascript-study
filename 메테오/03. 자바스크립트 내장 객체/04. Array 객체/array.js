@@ -140,3 +140,15 @@ let persons = [
 
 persons.sort((a, b) => (a.point > b.point ? -1 : a.point < b.point ? 1 : 0));
 console.log(persons);
+
+console.log("--------------filter() 예제--------------");
+let words2 = ["spray", "limit", "elite", "exuberant", "destruction", "present"];
+
+let result = words2.filter((word, index, words2) => {
+  console.log(index);
+  //   console.log(words2);
+  return word.length > 6;
+});
+console.log(result);
+
+console.log("--------------map()--------------");
