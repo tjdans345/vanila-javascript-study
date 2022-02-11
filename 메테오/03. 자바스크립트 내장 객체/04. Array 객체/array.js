@@ -152,3 +152,69 @@ let result = words2.filter((word, index, words2) => {
 console.log(result);
 
 console.log("--------------map()--------------");
+let memberList = [
+  {
+    firstName: "재석",
+    lastName: "유",
+    email: "yu@gmail.com",
+  },
+  {
+    firstName: "종국",
+    lastName: "김",
+    email: "kim@gmail.com",
+  },
+  {
+    firstName: "석진",
+    lastName: "지",
+    email: "ji@gmail.com",
+  },
+  {
+    firstName: "지효",
+    lastName: "송",
+    email: "song@gmail.com",
+  },
+  {
+    firstName: "광수",
+    lastName: "이",
+    email: "lee@gmail.com",
+  },
+];
+
+let memberList2 = memberList.map((memberList, index) => {
+  return {
+    fullName: memberList.lastName + memberList.firstName,
+    firstName: memberList.firstName,
+    email: memberList.email,
+  };
+});
+console.log(memberList2);
+
+console.log("--------------reduce()--------------");
+let points5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+let sum = points5.reduce((total, currentValue, index, test) => {
+  console.log("test : " + test);
+  console.log("total : " + total);
+  console.log("currentValue : " + currentValue);
+  return total + currentValue;
+}, 0);
+console.log(sum);
+
+console.log("--------------Date - 생성자--------------");
+// new Date()
+let now = new Date(); // 사용자 브라우저의 시간을 가져옵니다.
+console.log(now);
+
+// new Date(year, month, day, hours, minutes, seconds, millise, conds)
+let d = new Date(2021, 6, 24, 10, 33, 30, 0); // 특정 날짜 시간을 지정해서 Date 객체 생성
+console.log(d);
+
+// new Date(milliseconds)
+let d2 = new Date(0);
+let d3 = new Date(1000000000);
+
+// new Date(date string)
+let d4 = new Date("October 13, 2014 11:13:00");
+
+console.log(d2);
+console.log(d3);
+console.log(d4);
