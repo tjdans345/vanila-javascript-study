@@ -119,3 +119,11 @@ if (file.endsWith(".pdf")) {
 } else {
   console.log("파일 아님");
 }
+
+function yyyyyyy() {
+  return "안젤라 바보";
+}
+
+console.log("여기임");
+
+console.log(yyyyyyy());
