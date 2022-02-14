@@ -10,3 +10,5 @@ userMap.set("아가트", "김보라");
 userMap.set("슬롬", "박재빈");
 
 console.log(userMap.size);
+
+console.log(userMap.get("메테오"));
