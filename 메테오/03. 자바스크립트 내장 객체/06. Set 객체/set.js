@@ -18,7 +18,7 @@ console.log(mySet);
 // mySet.clear();
 // console.log(mySet);
 
-mySet.forEach((item, item2, mySet) => console.log(mySet.has("창모")));
+mySet.forEach((item) => console.log(item));
 
 // 창모
 // 구창모
