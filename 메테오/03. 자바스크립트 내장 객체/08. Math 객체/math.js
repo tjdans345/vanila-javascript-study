@@ -29,3 +29,10 @@ console.log(Math.floor(3));
 console.log(Math.floor(2.7));
 console.log(Math.floor(3.2));
 console.log(Math.floor(5.0));
+
+// -------Math.floor()-------
+// 4
+// 3
+// 2
+// 3
+// 5
