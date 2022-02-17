@@ -41,3 +41,11 @@
 //   }
 //   i++;
 // }, 3000);
+
+var windowTest = "qwert";
+
+console.log(window.windowTest);
+
+window.test = "test입니다.";
+
+console.log(window.test);
