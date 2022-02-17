@@ -36,3 +36,9 @@ console.log(Math.floor(5.0));
 // 2
 // 3
 // 5
+
+// -------Math.pow()-------
+console.log("-------Math.pow()-------");
+console.log(Math.pow(2, 3));
+console.log(Math.pow(3, 2));
+console.log(Math.pow(4, 2));
