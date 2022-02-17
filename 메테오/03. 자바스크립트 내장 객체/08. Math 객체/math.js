@@ -42,3 +42,14 @@ console.log("-------Math.pow()-------");
 console.log(Math.pow(2, 3));
 console.log(Math.pow(3, 2));
 console.log(Math.pow(4, 2));
+
+// -------Math.sqrt()-------
+console.log("-------Math.sqrt()-------");
+console.log(Math.sqrt(64));
+console.log(Math.sqrt(20));
+console.log(Math.sqrt(12));
+
+// -------Math.sqrt()-------
+// 8
+// 4.47213595499958
+// 3.4641016151377544
