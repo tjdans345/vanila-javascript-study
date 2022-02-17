@@ -53,3 +53,41 @@ console.log(Math.sqrt(12));
 // 8
 // 4.47213595499958
 // 3.4641016151377544
+
+// -------Math.abs()-------
+console.log("-------Math.abs()-------");
+console.log(Math.abs(-64));
+console.log(Math.abs(-20));
+console.log(Math.abs(-12.52));
+
+// -------Math.abs()-------
+// 64
+// 20
+// 12.52
+
+// -------Math.min()-------
+console.log("-------Math.min()-------");
+console.log(Math.min(-64, 15, 0, 35));
+
+// -------Math.min()-------
+// 64
+// 20
+// 12.52
+
+// -------Math.max()-------
+console.log("-------Math.max()-------");
+console.log(Math.abs(15, 57, 80, 17, 50, 120));
+// -------Math.max()-------
+// 64
+// 20
+// 12.52
+
+// -------Math.random()-------
+console.log("-------Math.random()-------");
+console.log(Math.random());
+console.log(Math.random() * 10);
+
+for (let i = 0; i < 10; i++) {
+  console.log("-------기준선-------");
+  console.log(Math.floor(Math.random() * 10));
+}
