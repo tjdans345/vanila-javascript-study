@@ -11,4 +11,33 @@
 
 // console.log(txt);
 
-window.open("https://naver.com");
+// window.open("https://naver.com");
+
+// let myExec;
+
+// function myFunction() {
+//   myExec = setTimeout(function () {
+//     console.log("5초 후 프로그램 실행 ");
+//   }, 5000);
+// }
+
+// console.log("뭐가 먼저 실행될까 ?");
+
+// function myStopFunction() {
+//   clearTimeout(myExec);
+// }
+
+// myFunction();
+
+// // 뭐가 먼저 실행될까 ?
+// // 5초 후 프로그램 실행
+
+// let i = 0;
+// let fnc = setInterval(function () {
+//   console.log("3초마다 프로그램 실행 - " + i);
+//   if (i == 3) {
+//     clearInterval(fnc);
+//     console.log("프로그램 종료");
+//   }
+//   i++;
+// }, 3000);
