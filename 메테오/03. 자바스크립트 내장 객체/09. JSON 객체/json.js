@@ -19,3 +19,14 @@ let data = {
 console.log(data);
 
 console.log(JSON.stringify(data));
+
+// Object
+// employess: Array(3)
+// 0: {firstName: 'John', lastName: 'Doe'}
+// 1: {firstName: 'Anna', lastName: 'Smith'}
+// 2: {firstName: 'Peter', lastName: 'Jones'}
+// length: 3
+// [[Prototype]]: Array(0)
+// [[Prototype]]: Object
+
+// {"employess":[{"firstName":"John","lastName":"Doe"},{"firstName":"Anna","lastName":"Smith"},{"firstName":"Peter","lastName":"Jones"}]}
