@@ -42,10 +42,7 @@
 //   i++;
 // }, 3000);
 
-var windowTest = "qwert";
+var windowTest = "qwert"; // let 선언자는 윈도우 객체에 등록되지 않는군요 오호라...
 
 console.log(window.windowTest);
-
 window.test = "test입니다.";
-
-console.log(window.test);
