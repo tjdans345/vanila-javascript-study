@@ -38,3 +38,10 @@ userMap.forEach((user) => console.log(user));
 // 백수원
 // 김보라
 // 박재빈
+
+const makeMap = new Map();
+
+makeMap.set("dd", "?");
+makeMap.set({ 3: "3" }, "?");
+
+console.log(makeMap.get(Object));
