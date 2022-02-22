@@ -29,6 +29,59 @@
       //   (function () {
       //     alert("시작");
       //   })();
+
+      const arrowFunction = (first, second) => {
+        return first + second;
+      };
+
+      console.log(arrowFunction(1, 2));
+
+      function test5() {
+        console.log(this);
+      }
+
+      test5();
+
+      let test33 = function test3() {
+        console.log(this);
+      };
+      test33();
+
+      let obj = {
+        name: "meteor",
+        age: 29,
+        fun: function () {
+          console.log(this);
+        },
+      };
+
+      obj.fun();
+
+      let test7 = obj;
+      console.log((test7.name = "test"));
+      test7.fun();
+
+      function zz() {
+        return obj;
+      }
+
+      let ob1 = zz();
+      let ob2 = zz();
+      console.log(ob1);
+      ob1.name = "net";
+      console.log(ob2);
+
+      function Oh(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      let oh1 = new Oh("met", 20);
+      let oh2 = new Oh("het", 23);
+      console.log(oh1);
+      oh1.name = "meteor";
+      console.log(oh2);
+      console.log(oh1);
     </script>
   </body>
 </html>
