@@ -8,26 +8,32 @@
     <link rel="stylesheet" href="./toDoList2.css" />
   </head>
   <body>
+    <div id="newtask" style="float: left; width: 63%">
+      <button id="timer" style="width: 36%">현재 시간</button>
+    </div>
+
     <div class="container">
       <div id="newtask">
-        <input type="text" placeholder="Task to be done.." />
-        <button id="push">Add</button>
+        <input type="text" placeholder="할일을 입력해주세요" />
+        <button id="todo-add-btn">추가</button>
       </div>
 
       <div id="tasks">
         <div class="task">
-          <span id="taskname"> asddasdas </span>
+          <span id="taskname"> 회 먹기 </span>
           <button class="delete">
             <i class="far fa-trash-alt"></i>
           </button>
         </div>
         <div class="task">
-          <span id="taskname"> asddasdas </span>
+          <span id="taskname"> 춤추기 </span>
           <button class="delete">
             <i class="far fa-trash-alt"></i>
           </button>
         </div>
       </div>
     </div>
+
+    <script src="./toDoList2.js"></script>
   </body>
 </html>

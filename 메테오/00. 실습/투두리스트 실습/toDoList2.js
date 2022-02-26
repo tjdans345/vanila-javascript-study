@@ -9,7 +9,7 @@ const timerFunction = () => {
   }
 
   hour > 12 ? (hour = `PM ${hour - 12}`) : `AM ${hour}`;
-  timer.innerHTML = ` ${addZero(hour)} : ${addZero(
+  timer.innerHTML = `현재 시간 ${addZero(hour)} : ${addZero(
     today.getMinutes()
   )} : ${addZero(today.getSeconds())} `;
 };
