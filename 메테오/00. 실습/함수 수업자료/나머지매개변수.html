@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sum(a, b) {
+        return a + b;
+      }
+
+      //   alert(sum(1, 2, 3, 4, 5));
+
+      function sumAll(...args) {
+        let sum = 0;
+
+        for (let arg of args) {
+          sum += arg;
+        }
+        return sum;
+      }
+
+      //   alert(sumAll(1)); // 1
+      //   alert(sumAll(1, 2)); // 3
+      //   alert(sumAll(1, 2, 3)); // 6
+
+      function likeFood(first, second, ...elseFood) {
+        alert(
+          `좋아하는 음식 첫 번재는 ${first}이고 두 번째는 ${second} 입니다. 세 번째는 ${elseFood[0]} 입니다.`
+        );
+      }
+
+      //   likeFood("치킨", "삼겹살", "피자");
+
+      //   function test(arg1, ...rest, arg2 ) {
+
+      //   }
+
+      //   test(1,2,3);
+
+      // arguments 객체
+      function argumentsTest() {
+        alert(arguments.length);
+        alert(arguments[0]);
+        alert(arguments[1]);
+        alert(arguments[2]);
+
+        // arguments는 이러터블(값을 차례대로 꺼낼 수 있는) 객체이기 때문에
+        // for문을 사용해서 인수를 펼칠수도 있습니다!
+      }
+
+      //   argumentsTest(1, 2, 3);
+      //   argumentsTest(1, 2); // undefined
+      //   argumentsTest(1, 2, 3, 4); // 1, 2, 3 출력
+
+      function f() {
+        let showArg = () => alert(arguments[0]);
+        showArg();
+      }
+
+      f("ㅎㅇ"); // 1
+    </script>
+  </body>
+</html>

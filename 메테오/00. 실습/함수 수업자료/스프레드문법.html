@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let arr = [1, 7, 15];
+      //   alert(Math.max(arr));
+
+      //   let arr = [3, 5, 1];
+
+      //   alert(Math.max(...arr)); // 5 (스프레드 문법이 배열을 인수 목록으로 바꿔주었습니다.)
+
+      //   let arr1 = [1, -2, 3, 4];
+      //   let arr2 = [8, 3, -8, 1];
+
+      //   alert(Math.max(...arr1, ...arr2)); // 8
+
+      //   let arr1 = [1, -2, 3, 4];
+      //   let arr2 = [8, 3, -8, 1];
+
+      //   alert(Math.max(1, ...arr1, 2, ...arr2, 25)); // 25
+      //   let arr = [3, 5, 1];
+
+      // 스프레드 문법은 배열을 합칠 때도 활용할 수 있습니다.
+      let arr = [3, 5, 1];
+      let arr2 = [8, 9, 15];
+      let merged = [0, ...arr, 2, ...arr2];
+
+      alert(merged); // 0,3,5,1,2,8,9,15 (0, arr, 2, arr2 순서로 합쳐집니다.)
+
+      let str = "Hello";
+
+      alert([...str]); // H,e,l,l,o
+    </script>
+  </body>
+</html>

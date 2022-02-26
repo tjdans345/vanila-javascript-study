@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function 전자레인지가동(음식, 시간, 콜백함수) {
+        let 가동시간 = 0;
+
+        setInterval(function () {
+          가동시간++;
+          console.log(가동시간);
+          if (가동시간 === 시간) {
+            콜백함수(음식);
+            clearInterval();
+          }
+        }, 1000);
+      }
+
+      전자레인지가동("핫바", 30, 완료되었습니다);
+
+      console.log("조리가 시작되었습니다.");
+
+      // 콜백함수
+      function 완료되었습니다(음식) {
+        alert(`띵! ${음식} 조리가 완료되었습니다.`);
+      }
+    </script>
+  </body>
+</html>
