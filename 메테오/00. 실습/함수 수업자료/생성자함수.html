@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function User(name, nickname) {
+        this.name = name;
+        this.nickname = nickname;
+      }
+
+      // 이렇게 생성자 함수를 이용하게 된다면 손 쉽게 사용자 객체를 만들 수 있죠!!
+      // {...} 이렇게 객체리터럴을 이용하여 하나하나 코드를 작성해서 생성하는것보다 훨씬 간단하고 명확하게 다가오게되죠!ㅋㅋ
+      let user1 = new User("김철수", "철쑤");
+      let user2 = new User("김짱구", "부리부리");
+      let user3 = new User("김훈이", "울보");
+
+      console.log(user1);
+      console.log(user2);
+      console.log(user3);
+
+      function Calculator() {
+        this.read = function () {
+          this.a = +prompt("a?", 0);
+          this.b = +prompt("b?", 0);
+        };
+
+        this.sum = function () {
+          return this.a + this.b;
+        };
+
+        this.mul = function () {
+          return this.a * this.b;
+        };
+      }
+
+      let calculator = new Calculator();
+      calculator.read();
+
+      alert("Sum=" + calculator.sum());
+      //   alert("Mul=" + calculator.mul());
+    </script>
+  </body>
+</html>
