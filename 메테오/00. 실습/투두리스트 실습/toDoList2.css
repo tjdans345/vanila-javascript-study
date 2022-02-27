@@ -7,7 +7,7 @@
 }
 body {
   height: 100vh;
-  background: #08a4ec;
+  background: #fbd604;
 }
 .container {
   width: 40%;
@@ -40,7 +40,7 @@ body {
 
 #newtask input:focus {
   outline: none;
-  border-color: #0d75ec;
+  border-color: #07548b;
 }
 
 #newtask button {
@@ -48,7 +48,7 @@ body {
   float: right;
   font-weight: 500;
   font-size: 16px;
-  background-color: #f11483;
+  background-color: #075c99;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -72,9 +72,9 @@ body {
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #939697;
+  border: 1px solid #e3f3f0;
   cursor: pointer;
-  background-color: #c5e1e6;
+  background-color: #05e92b;
   height: 50px;
   margin-bottom: 8px;
   padding: 5px 10px;
@@ -87,7 +87,7 @@ body {
 }
 
 .task button {
-  background-color: #45d225;
+  background-color: #075c99;
   color: #ffffff;
   border: none;
   cursor: pointer;
