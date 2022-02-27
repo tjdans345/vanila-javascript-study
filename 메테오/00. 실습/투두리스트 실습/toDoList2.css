@@ -74,7 +74,7 @@ body {
   justify-content: space-between;
   border: 1px solid #e3f3f0;
   cursor: pointer;
-  background-color: #05e92b;
+  background-color: #eaeeea;
   height: 50px;
   margin-bottom: 8px;
   padding: 5px 10px;
@@ -87,7 +87,7 @@ body {
 }
 
 .task button {
-  background-color: #075c99;
+  background-color: #e02020;
   color: #ffffff;
   border: none;
   cursor: pointer;
