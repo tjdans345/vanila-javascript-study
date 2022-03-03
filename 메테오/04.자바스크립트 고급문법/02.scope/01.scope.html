@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function myMyFunction() {
+        let carName = "포르쉐 파나메라";
+        console.log(carName); // 함수 내에서는 carName에 접근이 가능하기 때문에, carName에 할당된 값을 콘솔에 출력한ㄷ
+      }
+
+      myMyFunction();
+
+      //   console.log(carname); // Uncaught ReferenceError: carname is not defined
+
+      // global scope
+      let carName2 = "람보르기니 아벤타도르"; // 함수 밖에서 선언된 변수! 즉 전역변수!! / 함수 밖은 물론이고, 함수 안에서도 사용가능이라능
+      function myFunction2() {
+        console.log(carName2);
+      }
+      myFunction2(); // carName2는 global scope로 어디서든 접근이 가능하므로, carName2에 할당된 값을 콘솔에 출력한다!
+      console.log(carName2);
+    </script>
+  </body>
+</html>
