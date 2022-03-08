@@ -3,8 +3,8 @@ const keyPress$ = fromEvent(document, "keydown").pipe(
   filter((k) => k.includes("Arrow")),
   map((k) => {
     return {
-      ArrowDown: 1,
-      ArrowUp: -1,
+      // ArrowDown: 1,
+      // ArrowUp: -1,
       ArrowLeft: -1,
       ArrowRight: 1,
     }[k];
