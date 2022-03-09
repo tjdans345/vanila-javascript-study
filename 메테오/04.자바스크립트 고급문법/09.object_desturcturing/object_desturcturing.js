@@ -17,4 +17,5 @@ function test({ username, age }) {
   console.log(`${username}는 ${age}살 이지롱`);
 }
 
+// 함수 파라미터로 함수를 전달가능하쥬 ?? ㅎㅎㅎ 1급 객체니까 ~
 test(getObject());
