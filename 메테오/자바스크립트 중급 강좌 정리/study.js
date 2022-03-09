@@ -72,3 +72,49 @@ const arr = [
 ];
 
 console.log(Object.fromEntries(arr)); // {name: 'meteor', age: 29, gender: 'male'}
+
+// Symbol
+// property key : 문자형
+const obj = {
+  1: "1입니다.",
+  false: "거짓",
+};
+
+// 문자열로 접근 가능
+Object.keys(obj);
+obj["1"]; // "1입니다."
+obj["false"]; // "거짓"
+
+// Symbol도 가능
+// Symbol은 유일한 식별자를 만들 때 사용한다
+const a3 = Symbol(); // new를 사용하지 않는다.
+
+const id = Symbol("id");
+const user7 = {
+  name: "mike",
+  age: 30,
+  [id]: "myId",
+};
+
+// Symbol로 만들어 넣은 프로퍼티는 캡슐화가 보장된다.
+console.log("심볼");
+console.log(Object.keys(user7)); // name : mike, age : 30
+
+// Symbol.for() : 전역 심볼
+// 하나의 심볼만 보장받을 수 있음
+// 없으면 만들고, 있으면 가져온다.
+// Symbol 함수는 매번 다른 Symbol값을 생성하지만,
+// Symbol.for 메소드는 하나를 생성한 뒤 키를 통해 같은 symbol을 공유한다!
+
+// 숨겨진 Symbol key 보는 법
+Object.getOwnPropertySymbols(user7); // 심볼키만 보여줌
+Reflect.ownKeys(user7); // 심볼키를 포함한 모든키를 보여줌
+
+// 숫자, 수학 method
+// toString()
+// 10진수 -> 2진수/16진수
+let num = 10;
+num.toString(); // "10"
+num.toString(2); // toString() 괄호안에 2를 넣으면 2진수르 변경시켜줌 "1010"
+let num2 = 255;
+num.toString(16); // 16을 넣었기에 16진수로 변환됨 "ff";
