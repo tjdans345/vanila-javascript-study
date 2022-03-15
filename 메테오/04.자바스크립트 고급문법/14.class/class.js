@@ -72,4 +72,4 @@ console.log(전기차1.getChargeTime());
 전기차1.setChargeTime(50);
 console.log(전기차1.getChargeTime());
 // 고마 벌써 class 단원을 다해뿟심더
-console.log(전기차1.getPrice());
+console.log(전기차1.getPrice()); // 부모 클래스에 정의된 특성도 다 사용가능하쥬 ?

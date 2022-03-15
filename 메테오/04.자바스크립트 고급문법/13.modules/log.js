@@ -5,3 +5,5 @@ export const log = (message) => {
 export const error = (errorMessage) => {
   console.log(errorMessage);
 };
+
+async function test() {}
