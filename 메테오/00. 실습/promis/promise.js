@@ -101,6 +101,3 @@ function pickFruits() {
 }
 
 pickFruits().then((result) => console.log(result));
-getApple()
-  .then((res) => getBanana())
-  .then((res) => console.log(`adsdasads ${res}`));
