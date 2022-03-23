@@ -11,3 +11,9 @@ export class Electronics {
   turnOn = () => {};
   turnOff = () => {};
 }
+
+const Electrionicss = {};
+
+function Person() {}
+
+const person1 = new Person();
