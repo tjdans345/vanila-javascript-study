@@ -12,7 +12,10 @@ export class Electronics {
   turnOff = () => {};
 }
 
-const Electrionicss = {};
+const Electrionicss = {
+  test: "test",
+  test2: "test2",
+};
 
 function Person() {}
 
