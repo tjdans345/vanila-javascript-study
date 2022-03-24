@@ -1,12 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>탭 슬라이드 두개 구현</title>
   </head>
+
   <body>
-    <script src="./test.js"></script>
+    <script type="text/javascript">
+      "use strict";
+      let cnum = 1;
+      let ctr;
+      let ctr2;
+      function contabroll(num) {
+        let knum;
+        if (num) {
+          knum = num;
+          cnum = num;
+        } else {
+          knum = cnum;
+        }
+
+        let con = document
+          .getElementById("contabroll")
+          .getElementsByTagName("dt");
+        let tab = document
+          .getElementById("contabroll")
+          .getElementsByTagName("dd");
+
+        for (let i = 1; i <= con.length; i++) {
+          con[i - 1].className = knum == i ? "on" : "";
+          tab[i - 1].className = knum == i ? "on" : "";
+        }
+        cnum++;
+        if (cnum > con.length) {
+          cnum = 1;
+        }
+      }
+
+      function contabrolling(type) {
+        type == "start"
+          ? (ctr = setInterval(contabroll, 2000))
+          : clearTimeout(ctr);
+      }
+
+      //2
+      let cnum2 = 1;
+      function contabroll2(num2) {
+        let knum2;
+        if (num2) {
+          knum2 = num2;
+          cnum2 = num2;
+        } else {
+          knum2 = cnum2;
+        }
+
+        let con2 = document
+          .getElementById("contabroll2")
+          .getElementsByTagName("dt");
+        let tab2 = document
+          .getElementById("contabroll2")
+          .getElementsByTagName("dd");
+
+        for (let i = 1; i <= con2.length; i++) {
+          con2[i - 1].className = knum2 == i ? "on" : "";
+          tab2[i - 1].className = knum2 == i ? "on" : "";
+        }
+        cnum2++;
+        if (cnum2 > con2.length) cnum2 = 1;
+      }
+
+      function contabrolling2(type) {
+        type == "start"
+          ? (ctr2 = setInterval(contabroll2, 2000))
+          : clearTimeout(ctr2);
+      }
+
+      //-->
+    </script>
+
+    <style type="text/css">
+      #contabroll > dl {
+        float: left;
+      }
+      #contabroll > dt {
+        display: none;
+        width: 283px;
+        height: 100px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+      }
+      #contabroll > dt.on {
+        display: block;
+      }
+      #contabroll > dd {
+        float: left;
+        width: 50px;
+        margin: 0 -1px 0 0;
+        padding: 10px;
+        border: 1px solid blue;
+        text-align: center;
+      }
+      #contabroll > dd.on {
+        background: blue;
+        font-weight: bold;
+        color: #fff;
+      }
+
+      #contabroll2 > dl {
+        float: right;
+      }
+      #contabroll2 > dt {
+        display: none;
+        width: 283px;
+        height: 100px;
+        border: 1px solid red;
+        margin-bottom: 10px;
+      }
+      #contabroll2 > dt.on {
+        display: block;
+      }
+      #contabroll2 > dd {
+        float: left;
+        width: 50px;
+        margin: 0 -1px 0 0;
+        padding: 10px;
+        border: 1px solid blue;
+        text-align: center;
+      }
+      #contabroll2 > dd.on {
+        background: blue;
+        font-weight: bold;
+        color: #fff;
+      }
+    </style>
+
+    <dl
+      id="contabroll"
+      onmouseover="contabrolling('stop');"
+      onmouseout="contabrolling('start');"
+    >
+      <dt class="dt">tab 내용 1</dt>
+      <dt class="dt">tab 내용 2</dt>
+      <dt class="dt">tab 내용 3</dt>
+      <dt class="dt">tab 내용 4</dt>
+
+      <dd onclick="contabroll(1);">tab1</dd>
+      <dd onclick="contabroll(2);">tab2</dd>
+      <dd onclick="contabroll(3);">tab3</dd>
+      <dd onclick="contabroll(4);">tab4</dd>
+    </dl>
+
+    <dl
+      id="contabroll2"
+      onmouseover="contabrolling2('stop');"
+      onmouseout="contabrolling2('start');"
+    >
+      <dt class="dt2">tab 내용 5</dt>
+      <dt class="dt2">tab 내용 6</dt>
+      <dt class="dt2">tab 내용 7</dt>
+      <dt class="dt2">tab 내용 8</dt>
+
+      <dd onclick="contabroll2(1);">tab5</dd>
+      <dd onclick="contabroll2(2);">tab6</dd>
+      <dd onclick="contabroll2(3);">tab7</dd>
+      <dd onclick="contabroll2(4);">tab8</dd>
+    </dl>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        contabroll(1);
+        contabrolling("start");
+
+        contabroll2(1);
+        contabrolling2("start");
+      };
+
+      //-->
+    </script>
   </body>
 </html>
