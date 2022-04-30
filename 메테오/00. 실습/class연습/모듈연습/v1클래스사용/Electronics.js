@@ -5,7 +5,6 @@ export class Electronics {
   }
 
   getName = () => {};
-
   introduce = () => {};
   sayPrice = () => {};
   turnOn = () => {};
