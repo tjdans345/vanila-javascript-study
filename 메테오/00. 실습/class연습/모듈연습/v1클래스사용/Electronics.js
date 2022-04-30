@@ -10,3 +10,12 @@ export class Electronics {
   turnOn = () => {};
   turnOff = () => {};
 }
+
+const Electrionicss = {
+  test: "test",
+  test2: "test2",
+};
+
+function Person() {}
+
+const person1 = new Person();
