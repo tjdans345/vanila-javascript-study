@@ -39,7 +39,7 @@ export class Tree {
 
     // depth에 해당하는 위치의 배열에 가지를 추가
     this.branches[depth].push(
-      new Branch(startX, startY, endX, endY, this.depth - depth)
+      new Branch(startX, startY, endX, endY, this.depth - depth) // 굵기를 가늘게 함
     );
 
     // 재귀함수 이용
