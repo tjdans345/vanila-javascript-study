@@ -17,7 +17,7 @@ export class Branch {
     this.gapX = (this.endX - this.startX) / this.frame;
     this.gapY = (this.endY - this.startY) / this.frame;
 
-    // 구간별 가지가 그려질 때 끝 좌표
+    // 구간별 가지가 그려질 때 끝 좌표값
     this.currentX = this.startX;
     this.currentY = this.startY;
   }
