@@ -21,7 +21,7 @@ export class Tree {
     }
 
     // 시작 각도 -> -90도로 아래에서 위로 나무 기둥 자라게 배치
-    // 시작 depth는 0
+    // 시작 depth는 0에서 시작
     this.createBranch(this.posX, this.posY, -90, 0);
     this.draw(this.ctx);
   }
