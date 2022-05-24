@@ -36,7 +36,42 @@
     <input type="text" value="텍스트입니다." />
     <input type="button" value="버튼입니다."/>
 
+    <p class="para">
+        홀롤로
+    </p>
     
+    <p class="para">
+        훌랄라
+    </p>
+
+    <label>
+        <input type="checkbox" name="chk" value="shopping"> 쇼핑 
+    </label>
+        <label>
+        <input type="checkbox" name="chk" value="book" checked> 도서/책 
+    </label>
+
+    <script>
+        const elemets = document.querySelectorAll("p.para")
+
+        console.log(elemets)
+
+        let elements2 = document.getElementsByName("chk");
+        let checkedItems = []
+
+        for(let i=0; i < elements2.length; i++) {
+            if(elements2[i].checked) {
+                checkedItems.push(elements2[i].value)
+            }
+        }
+
+        console.log(checkedItems)
+
+        let chkElement = document.querySelectorAll("[name=chk]:checked")
+        console.log(chkElement)
+
+
+</script>
     
 </body>
 </html>

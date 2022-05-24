@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <input type="range" id="text1" onchange="change()"/>
+
+    <script>
+
+        const change = () => {
+        let textValue = document.getElementById("text1").value
+
+        console.log(textValue)
+
+        let textValue2 = document.getElementById("text1").getAttribute("value");
+
+        console.log(textValue2)
+        }
+
+    </script>
+    
+</body>
+</html>
