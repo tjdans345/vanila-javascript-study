@@ -4,8 +4,8 @@ export class Branch {
     this.startY = startY;
     this.endX = endX;
     this.endY = endY;
-    this.colorArray = ["#efff51", "#FFE400"];
-    this.color = "#efff51";
+    this.colorArray = ["#00AAFF", "#50BCDF"];
+    this.color = "#00AAFF";
     this.color2 = "#ffffff";
 
     this.lineWidth = lineWidth;
