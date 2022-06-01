@@ -8,6 +8,7 @@ let array = [
   "션",
   "슬롬",
   "메테오",
+  "코니",
 ];
 
 function findArray(arr, value) {
