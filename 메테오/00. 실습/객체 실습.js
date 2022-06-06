@@ -60,7 +60,7 @@ let meteor = {
   age: 29,
   homeGround: "Busan",
   say: function () {
-    console.log("메테오 메테오 거대 메테오~~!");
+    console.log("메테오 메테오 거대 메테오~~! 드디어 내가 여왔다.");
   },
 };
 
