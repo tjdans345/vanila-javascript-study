@@ -7,6 +7,7 @@ export class Iphone extends Electronics {
 
   slice = () => {
     console.log("밀어서 잠금 해제");
+    console.log("안녕 시리야");
   };
 }
 
