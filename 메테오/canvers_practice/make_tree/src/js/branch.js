@@ -41,9 +41,7 @@ export class Branch {
 
     ctx.stroke();
     ctx.closePath();
-
     this.cntFrame++; // 현재 프레임수 증가
-
     return false; // 그리는 중일 때 false 반환
   }
 }

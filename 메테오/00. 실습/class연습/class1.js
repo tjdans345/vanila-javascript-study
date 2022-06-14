@@ -4,6 +4,7 @@
 // (이름, 나이, 성별, 좋아하는 음식, 싫어하는 음식 / 함수 : 자기소개, 배고프다 말하기, 배부르다 말하기, 좋아하는 음식 말하기, 싫어하는 음식 말하기)
 
 class Person {
+
   constructor(name, age, gender, likeFood, hateFood) {
     this.p = name;
     this.age = age;
